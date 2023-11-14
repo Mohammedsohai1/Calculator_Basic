@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3B4664;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.calculator{
+    width: 30vw;
+    height: 85vh;
+    background-color: #3B4664;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+#calc{
+    align-self:flex-start;
+
+    color: white;
+}
+.upperbox{
+    width:28vw ;
+    height: 20vh;
+    background-color: #181F32;
+    border-radius: 10px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.lowerbox{
+    width:28vw ;
+    height: 60vh;
+    background-color: #252D44;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.display{
+    font-size: 60px;
+    color:white;
+}
+.btn_container{
+    width:25vw;
+    height: 50vh;
+    background-color: #252D44;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+}
+/* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px; */
+
+.common{
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: #EAE3DB;
+  
+    
+}
+.allbtns{
+    width: 65px;
+    height: 40px; 
+}
+.common:hover{
+    background-color: #c9c6c2;;
+    color: black;
+}
+
+#btn_reset{
+
+    grid-column-start:1 ;
+    grid-column-end:3;
+}
+#btn_equalsto{
+    background-color: #D13F30;
+    color: white;
+    grid-column-start:3;
+    grid-column-end:5;
+} 
+.btndel{
+   background-color:  #647299;
+   color: white;
+}
+.btndel:hover{
+    background-color: #4a61a0 ;
+    color: white;
+
+}
+.cmnbtn2{
+ background-color: #647299 ;
+ color: white;
+}
+.cmnbtn2:hover{
+    background-color: #4a61a0 ;
+    color: white;
+}
